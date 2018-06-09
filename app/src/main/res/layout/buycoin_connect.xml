@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/navigatio_actionbar"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/grid"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/text"
+            android:layout_above="@+id/bottom"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"
+            ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigatio_actionbar"></include>
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/user_image" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="3dp"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

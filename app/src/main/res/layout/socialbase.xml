@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="10dp">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tag_container_textView"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:layout_marginTop="13dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                        android:layout_height="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:layout_height="40dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/copy_socailbase_image_view"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/pagesicon"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/tweetericon"/>
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/fbicon"/>
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/instaicon"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/tab3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="FOLLOWERS"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
