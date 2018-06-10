@@ -185,7 +185,11 @@ void startService(){
                 try {
                     Log.i("paymentExample", confirm.toJSONObject().toString(4));
                     Log.i("paymentKey", confirm.getPayment().toJSONObject().toString(4));
-                    GetpaymentInfo(confirm.getPayment().toJSONObject().toString(4));
+                    JSONObject payment=confirm.toJSONObject().getJSONObject("response");
+                    Log.i("paymentKey", payment.getString("id").toString());
+                    Log.i("paymentamount", confirm.getPayment().toJSONObject().getString("amount"));
+//                    GetpaymentInfo(payment.getString("id"));
+                    savePaymentInfo(payment.getString("id"),confirm.getPayment().toJSONObject().getString("amount"),payment.getString("create_time"));
                     // TODO: send 'confirm' to your server for verification.
                     // see https://developer.paypal.com/webapps/developer/docs/integration/mobile/verify-mobile-payment/
                     // for more details.
@@ -349,7 +353,7 @@ holder.r1.setOnClickListener(new View.OnClickListener() {
     }
     public void savePaymentInfo(final String paymentId, final String amount, final String dateTime) throws Exception{
 
-        StringRequest strReq = new StringRequest(Request.Method.GET,
+        StringRequest strReq = new StringRequest(Request.Method.POST,
                 HeartBeatConfig.addPayment, new Response.Listener<String>() {
 
             @Override
@@ -386,12 +390,13 @@ holder.r1.setOnClickListener(new View.OnClickListener() {
                 params.put("payment_id",paymentId);
                 params.put("data&time",dateTime);
                 params.put("amount",amount);
-
+Log.e("input Para ",params.toString());
                 return params;
             }
         };
         strReq.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 2, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         Volley.newRequestQueue(getApplicationContext()).add(strReq);
+        Log.e("input string ",strReq.toString());
 
         // Global.getInstance().addToRequestQueue(strReq, reqTag);
     }
