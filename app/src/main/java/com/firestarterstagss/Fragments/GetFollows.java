@@ -319,7 +319,7 @@ public class GetFollows extends Fragment {
                                     data.getJSONObject(i).getString("media_id"),
                                     data.getJSONObject(i).getString("media_code"),
                                     data.getJSONObject(i).getString("type"), data.getJSONObject(i).getString("image"), data.getJSONObject(i).getString("username")));
-                            Log.d("user name for follow===>", data.getJSONObject(i).getString("username"));
+                            Log.d("user name for follow==>", data.getJSONObject(i).getString("username"));
 
 
                             Picasso.get().load(glist.get(item).getImage()).error(R.drawable.images).into(user_image);

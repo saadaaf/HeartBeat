@@ -359,8 +359,14 @@ holder.r1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onResponse(String response) {
                 try {
+
+                    Log.e("response",response);
+//                    JSONObject object = new JSONObject(response);
                     JSONObject object = new JSONObject(response);
-                    GetCoins();
+                    String satus = object.getString("status_code");
+                    if (satus.equals("200")){
+                        GetCoins();
+                    }
 //                    String satus = object.getString("id");
 //                    String date=object.getString("update_time");
 //                    JSONArray discription=new JSONArray(object.getString("transactions"));
