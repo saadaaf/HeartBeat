@@ -60,9 +60,7 @@ public class AddAccount extends AppCompatActivity {
     String cookies;
     String device;
    // String deviceIMEI;
-
     String url = "https://www.instagram.com/accounts/login";
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     @SuppressLint({"MissingPermission", "HardwareIds"})
     @Override
