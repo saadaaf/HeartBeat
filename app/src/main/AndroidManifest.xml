@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.firestarterstagss">
+    package="com.followersandleaders">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,22 +16,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.firestarterstagss.Activitys.OneTimePage" android:screenOrientation="portrait">
+        <activity android:name="com.followersandleaders.Activitys.OneTimePage" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.firestarterstagss.Activitys.HomeActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.UserProfile" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.BuyCoins" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.GetStart" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.SocialPage" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.MorePage" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.AddAccount" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.AddAccount2" android:screenOrientation="portrait"/>
-        <activity android:name="com.firestarterstagss.Activitys.SubmitForLike" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.followersandleaders.Activitys.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.UserProfile" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.BuyCoins" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.GetStart" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.SocialPage" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.MorePage" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.AddAccount" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.AddAccount2" android:screenOrientation="portrait"/>
+        <activity android:name="com.followersandleaders.Activitys.SubmitForLike" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
